@@ -17,7 +17,7 @@ class StatBloc extends Bloc<StatEvent, StatState> {
   Stream<StatState> mapEventToState(
     StatEvent event,
   ) async* {
-   // yield StatLoading();
+   yield StatLoading();
 
     if (event is GetStat) {
       try {
